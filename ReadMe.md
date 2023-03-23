@@ -2,7 +2,7 @@
 
 This Python script performs satellite conjunction assessment and collision avoidance using Two-Line Element (TLE) data. The script calculates the time of closest approach, distance of closest approach, probability of collision, and executes a collision avoidance maneuver if necessary.
 
-![Orbit before and after maneuver]()
+![Orbit before and after maneuver](https://github.com/ASTRONIAN/COCA/blob/master/images/COCA2.jpg)
 
 ## Functions
 
@@ -42,4 +42,4 @@ This Python script performs satellite conjunction assessment and collision avoid
 
 The script demonstrates the conjunction assessment and collision avoidance for the International Space Station (ISS) and an Iridium satellite (IRI) using their TLE data. The script calculates the closest approach time, closest approach distance, and probability of collision. If the probability of collision is higher than the acceptable limit or the closest approach distance is less than the minimum separation distance, the script performs a collision avoidance maneuver and updates the closest approach time, distance, and probability of collision.
 
-![Simulation terminal]()
+![Simulation terminal](https://github.com/ASTRONIAN/COCA/blob/master/images/COCA1.jpg)
