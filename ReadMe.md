@@ -1,22 +1,24 @@
-﻿**Satellite Conjunction Assessment and Collision Avoidance**
+# Satellite Conjunction Assessment and Collision Avoidance
 
 This Python script performs satellite conjunction assessment and collision avoidance using Two-Line Element (TLE) data. The script calculates the time of closest approach, distance of closest approach, probability of collision, and executes a collision avoidance maneuver if necessary.
 
-**Functions**
+![Orbit before and after maneuver]()
 
-**The script includes the following main functions:**
+## Functions
 
-distance(sat1, sat2): Calculates the distance between two satellite positions.
+### The script includes the following main functions:
 
-time\_of\_closest\_approach(sat1, sat2, t\_span): Calculates the time of closest approach between two satellites within a specified time span.
+**distance(sat1, sat2)**: Calculates the distance between two satellite positions.
 
-collision\_avoidance\_maneuver(sat1, delta\_v): Performs a collision avoidance maneuver by applying a delta-V to the satellite's velocity.
+**time_of_closest_approach(sat1, sat2, t_span)**: Calculates the time of closest approach between two satellites within a specified time span.
 
-probability\_of\_collision(min\_distance, R1, R2, sigma\_radial, sigma\_tangential): Calculates the probability of collision between two satellites within a specified time span.
+**collision_avoidance_maneuver(sat1, delta_v)**: Performs a collision avoidance maneuver by applying a delta-V to the satellite's velocity.
 
-calc\_epoch(tle\_file): Calculates the epoch from the TLE file.
+**probability_of_collision(min_distance, R1, R2, sigma_radial, sigma_tangential)**: Calculates the probability of collision between two satellites within a specified time span.
 
-**Usage**
+**calc_epoch(tle_file)**: Calculates the epoch from the TLE file.
+
+## Usage
 
 * Obtain orbital elements from TLE files for the satellites of interest.
 * Create Orbit objects for the satellites using the Poliastro library.
@@ -27,7 +29,7 @@ calc\_epoch(tle\_file): Calculates the epoch from the TLE file.
 * If the probability of collision is higher than the acceptable limit, perform a collision avoidance maneuver.
 * Plot the orbits of both satellites before and after the maneuver.
 
-**Dependencies**
+## Dependencies
 
 * numpy
 * scipy
@@ -36,6 +38,8 @@ calc\_epoch(tle\_file): Calculates the epoch from the TLE file.
 * datetime
 * re
 
-**Example**
+## Example
 
 The script demonstrates the conjunction assessment and collision avoidance for the International Space Station (ISS) and an Iridium satellite (IRI) using their TLE data. The script calculates the closest approach time, closest approach distance, and probability of collision. If the probability of collision is higher than the acceptable limit or the closest approach distance is less than the minimum separation distance, the script performs a collision avoidance maneuver and updates the closest approach time, distance, and probability of collision.
+
+![Simulation terminal]()
